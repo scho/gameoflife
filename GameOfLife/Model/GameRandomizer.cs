@@ -12,31 +12,31 @@ namespace GameOfLife.Model
             random = new Random();
         }
 
-        public bool[][] Randomize(int width, int height)
+        public bool[][] Randomize(GameDimensions dimensions)
         {
-            InitializeGameState(height);
-            SetGameRows(width, height);
+            InitializeGameState(dimensions);
+            SetGameRows(dimensions);
             return gameState;
         }
 
-        private void InitializeGameState(int height)
+        private void InitializeGameState(GameDimensions dimensions)
         {
-            gameState = new bool[height][];
+            gameState = new bool[dimensions.Height][];
         }
 
-        private void SetGameRows(int width, int height)
+        private void SetGameRows(GameDimensions dimensions)
         {
-            for (var row = 0; row < height; row++)
+            for (var row = 0; row < dimensions.Height; row++)
             {
-                SetGameStateRow(width, row);
+                SetGameStateRow(dimensions, row);
             }
         }
 
-        private void SetGameStateRow(int width, int row)
+        private void SetGameStateRow(GameDimensions dimensions, int row)
         {
-            gameState[row] = new bool[width];
+            gameState[row] = new bool[dimensions.Width];
 
-            for (var column = 0; column < width; column++)
+            for (var column = 0; column < dimensions.Width; column++)
             {
                 gameState[row][column] = GetRandomCellState();
             }

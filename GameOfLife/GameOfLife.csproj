@@ -44,6 +44,7 @@
     <Compile Include="Infrastructure\ConsoleWriter.cs" />
     <Compile Include="Infrastructure\IWriter.cs" />
     <Compile Include="Model\CellNeighbors.cs" />
+    <Compile Include="Model\GameDimensions.cs" />
     <Compile Include="Model\GameRandomizer.cs" />
     <Compile Include="Model\NieghborhoodInitializer.cs" />
     <Compile Include="Model\Game.cs" />
