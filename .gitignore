@@ -111,3 +111,4 @@ UpgradeLog*.XML
 # BitTorrent Sync
 .SyncID
 .SyncIgnore
+.SyncArchive
