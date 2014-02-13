@@ -1,4 +1,6 @@
-gameoflife
+C# implementation of Conway#s Game of Life
 ==========
 
-C# implementation of Conway's Game of Life http://en.wikipedia.org/wiki/Conway's_Game_of_Life
+This is a simple console application.
+I tried to follow the rules of object calistenics:
+http://williamdurand.fr/2013/06/03/object-calisthenics/
