@@ -1,4 +1,4 @@
-C# implementation of Conway#s Game of Life
+Conway's Game of Life in C#
 ==========
 
 This is a simple console application.
