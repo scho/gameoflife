@@ -4,7 +4,7 @@ namespace GameOfLife.Model
 {
     public class GameRandomizer
     {
-        private bool[][] field;
+        private bool[][] gameState;
         private readonly Random random;
 
         public GameRandomizer()
@@ -14,35 +14,35 @@ namespace GameOfLife.Model
 
         public bool[][] Randomize(int width, int height)
         {
-            InitializeField(height);
-            SetField(width, height);
-            return field;
+            InitializeGameState(height);
+            SetGameRows(width, height);
+            return gameState;
         }
 
-        private void InitializeField(int height)
+        private void InitializeGameState(int height)
         {
-            field = new bool[height][];
+            gameState = new bool[height][];
         }
 
-        private void SetField(int width, int height)
+        private void SetGameRows(int width, int height)
         {
-            for (var i = 0; i < height; i++)
+            for (var row = 0; row < height; row++)
             {
-                SetCell(width, i);
+                SetGameStateRow(width, row);
             }
         }
 
-        private void SetCell(int width, int i)
+        private void SetGameStateRow(int width, int row)
         {
-            field[i] = new bool[width];
+            gameState[row] = new bool[width];
 
-            for (var j = 0; j < width; j++)
+            for (var column = 0; column < width; column++)
             {
-                field[i][j] = GetRandomBool();
+                gameState[row][column] = GetRandomCellState();
             }
         }
 
-        private bool GetRandomBool()
+        private bool GetRandomCellState()
         {
             return random.Next(0, 2) == 1;
         }
