@@ -25,18 +25,18 @@ namespace GameOfLife.Infrastructure
             writer.Clear();
         }
 
+        private void PrintHeadline()
+        {
+            writer.WriteLine(" --- This is Conway's Game of Life ---");
+            writer.WriteLine();
+        }
+
         private void PrintGame()
         {
             foreach (var row in game.ToStringCollection())
             {
                 writer.WriteLine(" " + row);
             }
-        }
-
-        private void PrintHeadline()
-        {
-            writer.WriteLine(" --- This is Conway's Game of Life ---");
-            writer.WriteLine();
         }
     }
 }

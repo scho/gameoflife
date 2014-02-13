@@ -16,9 +16,9 @@ namespace GameOfLife
 
         public GameOfLife()
         {
-            var randomState = new GameRandomizer().Randomize(78, 21);
+            var initialState = new GameRandomizer().Randomize(78, 21);
             
-            game = new Game(randomState);
+            game = new Game(initialState);
             printer = new Printer(game, new ConsoleWriter());
         }
 
