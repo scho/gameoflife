@@ -112,3 +112,7 @@ UpgradeLog*.XML
 .SyncID
 .SyncIgnore
 .SyncArchive
+
+
+# Mac OS X
+.DS_Store
