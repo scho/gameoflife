@@ -75,7 +75,7 @@ namespace GameOfLife.Tests
             }
 
             [Test]
-            public void FourNeighborsStaysDies()
+            public void FourNeighborsStaysDead()
             {
                 var cell = Cell.CreateDead();
                 cell.AddNeighbor(Cell.CreateAlive());

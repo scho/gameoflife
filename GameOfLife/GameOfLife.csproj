@@ -46,7 +46,6 @@
     <Compile Include="Model\CellNeighbors.cs" />
     <Compile Include="Model\GameDimensions.cs" />
     <Compile Include="Model\GameRandomizer.cs" />
-    <Compile Include="Model\NieghborhoodInitializer.cs" />
     <Compile Include="Model\Game.cs" />
     <Compile Include="Model\Cell.cs" />
     <Compile Include="Model\CellState.cs" />
@@ -54,6 +53,7 @@
     <Compile Include="Infrastructure\Printer.cs" />
     <Compile Include="GameOfLife.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Model\NeighborhoodInitializer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

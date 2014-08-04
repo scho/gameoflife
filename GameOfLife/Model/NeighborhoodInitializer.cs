@@ -3,12 +3,12 @@ using System.Linq;
 
 namespace GameOfLife.Model
 {
-    public class NieghborhoodInitializer
+    public class NeighborhoodInitializer
     {
         private readonly IList<IList<Cell>> field;
         private readonly Cell cell;
 
-        public NieghborhoodInitializer(IList<IList<Cell>> field, Cell cell)
+        public NeighborhoodInitializer(IList<IList<Cell>> field, Cell cell)
         {
             this.field = field;
             this.cell = cell;
