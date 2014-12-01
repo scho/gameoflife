@@ -44,7 +44,7 @@ namespace GameOfLife.Model
             var cell = CreateCell(isAlive);
             row.Add(cell);
 
-            new NieghborhoodInitializer(field, cell).Initialize();
+            new NeighborhoodInitializer(field, cell).Initialize();
         }
         
         private static Cell CreateCell(bool cellState)
